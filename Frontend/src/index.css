@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+.orbit {
+    animation: orbit 20s linear infinite;
+}
+
+.orbit-delay-5 {
+    animation: orbit 20s linear infinite -5s;
+}
+
+.orbit-delay-10 {
+    animation: orbit 20s linear infinite -10s;
+}
+
+.orbit-delay-15 {
+    animation: orbit 20s linear infinite -15s;
+}
+
+@keyframes orbit {
+    0% {
+        /* In front / Right side */
+        transform: translate(-50%, -50%) rotate(0deg) translate(160px) rotate(0deg) scale(1);
+    }
+    50% {
+        /* Behind / Left side - reduced scale to 0.8 for depth */
+        transform: translate(-50%, -50%) rotate(180deg) translate(160px) rotate(-180deg) scale(0.8);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg) translate(160px) rotate(-360deg) scale(1);
+    }
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 640px) {
+    @keyframes orbit {
+        0% { transform: translate(-50%, -50%) rotate(0deg) translate(120px) rotate(0deg) scale(1); }
+        50% { transform: translate(-50%, -50%) rotate(180deg) translate(120px) rotate(-180deg) scale(0.7); }
+        100% { transform: translate(-50%, -50%) rotate(360deg) translate(120px) rotate(-360deg) scale(1); }
+    }
+}
