@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { styles } from "../assets/dummyAdmin";
+import { styles } from "../assets/dummyadmin";
 import { FiTrash2, FiStar, FiHeart } from "react-icons/fi";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
