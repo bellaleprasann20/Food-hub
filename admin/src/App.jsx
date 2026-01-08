@@ -6,6 +6,7 @@ import Order from "./components/Order.jsx";
 import Navbar from "./components/Navbar.jsx";
 
 const App = () => {
+  const url = import.meta.env.VITE_BASE_URL;
   return (
     <> 
       <Navbar />
