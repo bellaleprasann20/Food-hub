@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "https://food-hub-651r.onrender.com/api/$1"
+    }
+  ]
+}
