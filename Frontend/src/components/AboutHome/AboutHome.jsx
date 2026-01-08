@@ -3,7 +3,7 @@ import { aboutfeature } from '../../assets/dummydata';
 import { FaInfoCircle } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 // FIX 1: Removed curly braces and fixed path
-import AboutImage from '../../assets/Aboutimage.png'; 
+import AboutImage from '../../assets/AboutImage.png'; 
 import'./AboutHome.css'
 
 const AboutHome = () => {
